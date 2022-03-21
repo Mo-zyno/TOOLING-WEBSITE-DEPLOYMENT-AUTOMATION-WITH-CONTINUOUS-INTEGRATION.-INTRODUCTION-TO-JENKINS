@@ -88,7 +88,6 @@ You will be prompted to provide a default admin password.
 ![welocme to jenkins](./images/welcome%20to%20jenkins.png)
 
 
-
 ## STEP 2 -Configure Jenkins to retrieve source codes from GitHub using Webhooks
 
 In this part, i have to configure a simple Jenkins job/project (these two terms can be used interchangeably). This job will will be triggered by GitHub webhooks and will execute a ‘build’ task to retrieve codes from GitHub and store it locally on Jenkins server.
@@ -169,8 +168,7 @@ Opened the build and checked in "Console Output" that it ran successfully. (This
 
 `ls /var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/`
 
-![alt text](./images/artifact%20in%20our%20builds%20now%20in%20NFS%20server.png)
-
+![alt text](./images/artifact%20stored%20in%20jenkins%20server%20locally.png)
 
 ## STEP 3 -Configure Jenkins to copy files to NFS server via SSH
 
